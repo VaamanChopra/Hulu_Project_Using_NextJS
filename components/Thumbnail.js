@@ -14,6 +14,9 @@ function Thumbnail({ result }) {
               height={1080}
               width={1920}
         />
+        <div>
+            <p>{result.overview}</p>
+        </div>
     </div>
   )
 }
