@@ -14,8 +14,8 @@ function Thumbnail({ result }) {
               height={1080}
               width={1920}
         />
-        <div>
-            <p>{result.overview}</p>
+        <div className="p-2">
+            <p className="truncate max-w-md">{result.overview}</p>
         </div>
     </div>
   )
