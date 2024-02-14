@@ -1,4 +1,5 @@
 import Image from "next/image"
+import {ThumbUpIcon} from "@heroicons/react/outline";
 
 function Thumbnail({ result }) {
     const BASE_URL = "https://image.tmdb.org/t/p/original/";
@@ -19,6 +20,11 @@ function Thumbnail({ result }) {
             <h2>
                 {result.title || result.original_name}
             </h2>
+            <p>
+                {result.media_type && `${result.media_type} •`}{" "}
+                {result.release_date || result.first_air_date} •{" "}
+                <ThumbUpIcon className="h-5 mx-2" /> {result.vote_count}
+            </p>
         </div>
     </div>
   )
