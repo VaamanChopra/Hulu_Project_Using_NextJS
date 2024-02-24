@@ -12,7 +12,7 @@ import HeaderItem from "./HeaderItem"
 function Header() {
   return (
     <header className="">
-      <div>
+      <div className="flex">
         <HeaderItem title='HOME' Icon={HomeIcon}/>
         <HeaderItem title='TRENDING' Icon={LightningBoltIcon}/>
         <HeaderItem title='VERIFIED' Icon={BadgeCheckIcon}/>
