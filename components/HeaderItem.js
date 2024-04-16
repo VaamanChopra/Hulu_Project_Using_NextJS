@@ -1,10 +1,13 @@
-function HeaderItem({ Icon, title}) {
+function HeaderItem({ Icon, title }) {
   return (
-    <div>
-        <Icon />
-        <p>{title}</p>
+    <div className="group">
+        <Icon className="h-8 mb-1" />
+        <p className="opacity-0 group-hover:opacity-100 
+        tracking-widest">
+            {title}
+        </p>
     </div>
-  )
+  );
 }
 
 export default HeaderItem
