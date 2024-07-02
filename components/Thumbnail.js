@@ -16,6 +16,9 @@ function Thumbnail({ result }) {
         />
         <div className="p-2">
             <p className="truncate max-w-md">{result.overview}</p>
+            <h2>
+                {result.title || result.original_name}
+            </h2>
         </div>
     </div>
   )
