@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Nav from "@/components/Nav";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -8,12 +9,7 @@ export default function Home() {
 
       </Head>
       <Header />
-
-
-      {/* <nav></nav> */}
-
-
-      {/* // <results></results> */}
+      <Nav />
     </div>
   );
 }
